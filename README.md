@@ -1,16 +1,54 @@
-# React + Vite
+# ProductHub — React SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+ProductHub is a responsive product management application built with React and React Router. It communicates with a REST API using the Fetch API.
 
-Currently, two official plugins are available:
+## Features
+- View products
+- Add new products
+- Edit existing products
+- Delete products
+- Search products by name or category
+- Client-side routing
+- Loading and error states
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React
+- Vite
+- React Router DOM
+- JavaScript
+- CSS
+- Fetch API
+- Node.js and Express REST API
+- MongoDB
 
-## React Compiler
+## Setup Instructions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Install Node.js and MongoDB.
+2. Start the ProductHub backend and confirm that the API is available at `http://localhost:5000`.
+3. Open this frontend folder in a terminal.
+4. Install dependencies:
 
-## Expanding the ESLint configuration
+   `npm install`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. Start the development server:
+
+   `npm run dev`
+
+6. Open the local URL shown in the terminal, normally `http://localhost:5173`.
+
+## API Configuration
+The frontend expects the API base URL to be `http://localhost:5000/api` by default. You can configure it using a `.env` file in the frontend root:
+
+`VITE_API_URL=http://localhost:5000/api`
+
+Restart Vite after changing environment variables.
+
+## Testing
+Verify product listing, creation, editing, deletion, search, loading states, and error handling against a running backend and MongoDB instance.
+
+
+
+## Project Links
+- GitHub Repository: Add your repository URL
+- Live Demo: Add your deployed frontend URL, if available
